@@ -1,6 +1,6 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Doctrine;
+namespace EdipoElwes\LaravelMysqlSpatial\Doctrine;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\Type;
@@ -9,12 +9,12 @@ class Point extends Type
 {
     const POINT = 'point';
 
-    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform)
+    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform): string
     {
         return 'point';
     }
 
-    public function getName()
+    public function getName(): string
     {
         return self::POINT;
     }

@@ -1,12 +1,12 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial\Eloquent;
+namespace EdipoElwes\LaravelMysqlSpatial\Eloquent;
 
-use Grimzy\LaravelMysqlSpatial\Exceptions\SpatialFieldsNotDefinedException;
-use Grimzy\LaravelMysqlSpatial\Exceptions\UnknownSpatialFunctionException;
-use Grimzy\LaravelMysqlSpatial\Exceptions\UnknownSpatialRelationFunction;
-use Grimzy\LaravelMysqlSpatial\Types\Geometry;
-use Grimzy\LaravelMysqlSpatial\Types\GeometryInterface;
+use EdipoElwes\LaravelMysqlSpatial\Exceptions\SpatialFieldsNotDefinedException;
+use EdipoElwes\LaravelMysqlSpatial\Exceptions\UnknownSpatialFunctionException;
+use EdipoElwes\LaravelMysqlSpatial\Exceptions\UnknownSpatialRelationFunction;
+use EdipoElwes\LaravelMysqlSpatial\Types\Geometry;
+use EdipoElwes\LaravelMysqlSpatial\Types\GeometryInterface;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 
 /**

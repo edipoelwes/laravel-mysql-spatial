@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit backupGlobals="false"
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+         backupGlobals="false"
          backupStaticAttributes="false"
          bootstrap="./vendor/autoload.php"
          colors="true"
@@ -8,6 +10,14 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false">
+    <coverage processUncoveredFilesFromWhitelist="true">
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <report>
+            <clover outputFile="build/logs/clover.xml"/>
+        </report>
+    </coverage>
     <testsuites>
         <testsuite name="unit">
             <directory suffix="Test.php">./tests/Unit</directory>
@@ -16,19 +26,9 @@
             <directory suffix="Test.php">./tests/Integration</directory>
         </testsuite>
     </testsuites>
-    <listeners>
-        <listener class="\Mockery\Adapter\Phpunit\TestListener"
-                  file="vendor/mockery/mockery/library/Mockery/Adapter/Phpunit/TestListener.php">
-        </listener>
-    </listeners>
-    <filter>
-        <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./src</directory>
-        </whitelist>
-    </filter>
-    <logging>
-        <log type="coverage-clover" target="build/logs/clover.xml"/>
-    </logging>
+    <extensions>
+        <extension class="\Mockery\Adapter\Phpunit\MockeryExtension"/>
+    </extensions>
     <php>
         <env name="APP_ENV" value="testing"/>
         <env name="APP_DEBUG" value="true"/>

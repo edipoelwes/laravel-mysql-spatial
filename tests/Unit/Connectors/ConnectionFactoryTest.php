@@ -1,7 +1,7 @@
 <?php
 
-use Grimzy\LaravelMysqlSpatial\Connectors\ConnectionFactory;
-use Grimzy\LaravelMysqlSpatial\MysqlConnection;
+use EdipoElwes\LaravelMysqlSpatial\Connectors\ConnectionFactory;
+use EdipoElwes\LaravelMysqlSpatial\MysqlConnection;
 use Illuminate\Container\Container;
 use Stubs\PDOStub;
 

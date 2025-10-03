@@ -1,10 +1,10 @@
 <?php
 
-namespace Grimzy\LaravelMysqlSpatial;
+namespace EdipoElwes\LaravelMysqlSpatial;
 
 use Doctrine\DBAL\Types\Type as DoctrineType;
-use Grimzy\LaravelMysqlSpatial\Schema\Builder;
-use Grimzy\LaravelMysqlSpatial\Schema\Grammars\MySqlGrammar;
+use EdipoElwes\LaravelMysqlSpatial\Schema\Builder;
+use EdipoElwes\LaravelMysqlSpatial\Schema\Grammars\MySqlGrammar;
 use Illuminate\Database\MySqlConnection as IlluminateMySqlConnection;
 
 class MysqlConnection extends IlluminateMySqlConnection
@@ -26,7 +26,7 @@ class MysqlConnection extends IlluminateMySqlConnection
                 'geometrycollection',
                 'geomcollection',
             ];
-            $dbPlatform = $this->getDoctrineSchemaManager()->getDatabasePlatform();
+            $dbPlatform = $this->getDoctrineConnection()->getDatabasePlatform();
             foreach ($geometries as $type) {
                 $dbPlatform->registerDoctrineTypeMapping($type, 'string');
             }
