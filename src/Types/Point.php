@@ -70,7 +70,7 @@ class Point extends Geometry
     /**
      * @param $geoJson  \GeoJson\Feature\Feature|string
      *
-     * @return \Grimzy\LaravelMysqlSpatial\Types\Point
+     * @return \EdipoElwes\LaravelMysqlSpatial\Types\Point
      */
     public static function fromJson($geoJson)
     {
