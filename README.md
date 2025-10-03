@@ -1,9 +1,9 @@
 # Laravel MySQL Spatial extension
 
-[![Build Status](https://img.shields.io/travis/grimzy/laravel-mysql-spatial.svg?style=flat-square)](https://travis-ci.org/grimzy/laravel-mysql-spatial)
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/grimzy/laravel-mysql-spatial.svg?style=flat-square)](https://codeclimate.com/github/grimzy/laravel-mysql-spatial/maintainability)
-[![Code Climate](https://img.shields.io/codeclimate/c/grimzy/laravel-mysql-spatial.svg?style=flat-square&colorB=4BCA2A)](https://codeclimate.com/github/grimzy/laravel-mysql-spatial/test_coverage) [![Packagist](https://img.shields.io/packagist/v/grimzy/laravel-mysql-spatial.svg?style=flat-square)](https://packagist.org/packages/grimzy/laravel-mysql-spatial)
-[![Packagist](https://img.shields.io/packagist/dt/grimzy/laravel-mysql-spatial.svg?style=flat-square)](https://packagist.org/packages/grimzy/laravel-mysql-spatial) [![StyleCI](https://github.styleci.io/repos/83766141/shield?branch=master)](https://github.styleci.io/repos/83766141) 
+[![Build Status](https://img.shields.io/travis/edipoelwes/laravel-mysql-spatial.svg?style=flat-square)](https://travis-ci.org/edipoelwes/laravel-mysql-spatial)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/edipoelwes/laravel-mysql-spatial.svg?style=flat-square)](https://codeclimate.com/github/edipoelwes/laravel-mysql-spatial/maintainability)
+[![Code Climate](https://img.shields.io/codeclimate/c/edipoelwes/laravel-mysql-spatial.svg?style=flat-square&colorB=4BCA2A)](https://codeclimate.com/github/edipoelwes/laravel-mysql-spatial/test_coverage) [![Packagist](https://img.shields.io/packagist/v/edipoelwes/laravel-mysql-spatial.svg?style=flat-square)](https://packagist.org/packages/edipoelwes/laravel-mysql-spatial)
+[![Packagist](https://img.shields.io/packagist/dt/edipoelwes/laravel-mysql-spatial.svg?style=flat-square)](https://packagist.org/packages/edipoelwes/laravel-mysql-spatial) [![StyleCI](https://github.styleci.io/repos/83766141/shield?branch=master)](https://github.styleci.io/repos/83766141) 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 
 Laravel package to easily work with [MySQL Spatial Data Types](https://dev.mysql.com/doc/refman/8.0/en/spatial-type-overview.html) and [MySQL Spatial Functions](https://dev.mysql.com/doc/refman/8.0/en/spatial-function-reference.html).
@@ -25,25 +25,22 @@ This package also works with MariaDB. Please refer to the [MySQL/MariaDB Spatial
 Add the package using composer:
 
 ```sh
-$ composer require grimzy/laravel-mysql-spatial:^4.0
-
-# or for Laravel version < 8.0
-$ composer require grimzy/laravel-mysql-spatial:^3.0
+$ composer require edipoelwes/laravel-mysql-spatial
 ```
 
 For MySQL 5.7:
 
 ```shell
-$ composer require grimzy/laravel-mysql-spatial:^2.0
+$ composer require edipoelwes/laravel-mysql-spatial
 ```
 
 For MySQL 5.6 and 5.5:
 
 ```shell
-$ composer require grimzy/laravel-mysql-spatial:^1.0
+$ composer require edipoelwes/laravel-mysql-spatial
 ```
 
-For Laravel versions before 5.5 or if not using auto-discovery, register the service provider in `config/app.php`:
+For Laravel versions before 8.0 or if not using auto-discovery, register the service provider in `config/app.php`:
 
 ```php
 'providers' => [
