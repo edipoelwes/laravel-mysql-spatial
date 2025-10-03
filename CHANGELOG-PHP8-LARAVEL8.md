@@ -10,7 +10,7 @@
 - ✅ Atualizado Mockery para versões mais recentes
 
 ### 2. **Mudança de Namespace**
-- ✅ Alterado de `Grimzy\LaravelMysqlSpatial` para `EdipoElwes\LaravelMysqlSpatial`
+- ✅ Alterado de `EdipoElwes\LaravelMysqlSpatial` para `EdipoElwes\LaravelMysqlSpatial`
 - ✅ Atualizado em todos os arquivos do pacote
 - ✅ Atualizado em todos os arquivos de teste
 - ✅ Atualizado no README.md
